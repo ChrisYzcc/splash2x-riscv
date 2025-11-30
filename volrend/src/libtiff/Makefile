@@ -145,8 +145,9 @@ tif_compress.o: tif_compress.c Makefile
 	${CC} -c ${CFLAGS} ${CONF_COMPRESSION} tif_compress.c
 tif_fax3.o: tif_fax3.c g3states.h t4.h tif_fax3.h
 
+# use HOST CC to build mkg3states
 g3states.h: mkg3states.c t4.h
-	${CC} -o mkg3states ${CFLAGS} mkg3states.c
+	gcc -o mkg3states ${CFLAGS} mkg3states.c
 	./mkg3states -c > g3states.h
 
 install: all installh
