@@ -8,6 +8,7 @@ while getopts "p:rhn:i:" opt; do
         p) PROGRAM=$OPTARG ;;
         r) PLATFORM=rv64 ;;
         n) NTHREADS=$OPTARG ;;
+        i) INPUT_SIZE=$OPTARG ;;
         h) echo "Usage: $0 [-p program] [-r] [-v version] [-h]"
            echo "  -p program   : specify the program to run, default: blackscholes"
            echo "  -r           : set platform to rv64"
