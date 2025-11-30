@@ -28,7 +28,6 @@ $(TARGET): $(OBJS)
 install:
 	mkdir -p $(PREFIX)/bin
 	cp -f $(TARGET) $(PREFIX)/bin/$(TARGET)
-	cp -f run.sh $(PREFIX)/bin/run.sh
 
 clean:
 	rm -rf *.c *.h *.o $(TARGET)
