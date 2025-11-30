@@ -10,7 +10,7 @@ while getopts "p:rh" opt; do
         p) PROGRAM=$OPTARG ;;
         r) PLATFORM=rv64 ;;
         h) echo "Usage: $0 [-p program] [-r] [-h]"
-           echo "  -p program : specify the program to build, default: blackscholes"
+           echo "  -p program : specify the program to build, default: barnes"
            echo "  -r          : set platform to rv64"
            echo "  -h          : display this help message"
            exit 0 ;;
