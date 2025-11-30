@@ -1,4 +1,4 @@
-BENCH_DIR=${SPLASH2DIR}/barnes
+BENCH_DIR=${SPLASH2XDIR}/barnes
 
 mkdir -p ${BENCH_DIR}/build/${PLATFORM}/obj
 cp -r ${BENCH_DIR}/src/* ${BENCH_DIR}/build/${PLATFORM}/obj/
