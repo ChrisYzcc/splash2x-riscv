@@ -45,14 +45,16 @@ RISC-V Platfrom: QEMU, Kunminghu Config
 | ocean_ncp | *             | x             |
 | radiosity | *             | *             |
 | radix     | *             | *             |
-| raytrace  | *             | x             |
+| raytrace  | *             | *             |
 | volrend   | *             | *             |
 | water_ns  | *             | *             |
 | water_sp  | *             | *             |
 
-`raytrace` and `ocean_ncp` will cause segmentation fault on qemu-riscv machine.
+`raytrace` will cause segmentation fault on qemu-riscv machine. - Fix: fix multiple definition.
+
+`ocean_ncp` will cause segmentation fault on qemu-riscv machine.
 
 ## Future Work
-- [ ] Fix `raytrace`.
+- [x] Fix `raytrace`.
 - [ ] Fix `ocean_ncp`.
 - [ ] Add other inputs package (simsmall, simmedium, simlarge, native) and command.
