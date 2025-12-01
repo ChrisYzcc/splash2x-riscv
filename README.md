@@ -42,7 +42,7 @@ RISC-V Platfrom: QEMU, Kunminghu Config
 | lu_cb     | *             | *             |
 | lu_ncb    | *             | *             |
 | ocean_cp  | *             | *             |
-| ocean_ncp | *             | x             |
+| ocean_ncp | *             | *             |
 | radiosity | *             | *             |
 | radix     | *             | *             |
 | raytrace  | *             | *             |
@@ -52,9 +52,9 @@ RISC-V Platfrom: QEMU, Kunminghu Config
 
 `raytrace` will cause segmentation fault on qemu-riscv machine. - Fix: fix multiple definition.
 
-`ocean_ncp` will cause segmentation fault on qemu-riscv machine.
+`ocean_ncp` will cause segmentation fault on qemu-riscv machine. - Fix: we need at least 16GB memory when running test size input.
 
 ## Future Work
 - [x] Fix `raytrace`.
-- [ ] Fix `ocean_ncp`.
+- [x] Fix `ocean_ncp`.
 - [ ] Add other inputs package (simsmall, simmedium, simlarge, native) and command.
