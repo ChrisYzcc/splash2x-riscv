@@ -1,6 +1,14 @@
 # RISC-V Splash2x Benchmark
 
 ## Command
+**Get Inputs Command**
+
+`gen_inputs.sh` will download the inputs and extract them to the directories.
+
+```
+Usage: ./gen_inputs.sh
+```
+
 **Build Command**
 ```
 Usage: ./build.sh [-p program] [-r] [-h]
@@ -19,7 +27,7 @@ Usage: ./run.sh [-p program] [-r] [-v version] [-h]
   -h           : display this help message
 ```
 
-Currently only support `test` and `simdev` inputs.
+Available inputs size: `test`, `simdev`, `simsmall`, `simmedium`, `simlarge`.
 
 **RISC-V Package**
 
@@ -57,4 +65,5 @@ RISC-V Platfrom: QEMU, Kunminghu Config
 ## Future Work
 - [x] Fix `raytrace`.
 - [x] Fix `ocean_ncp`.
-- [ ] Add other inputs package (simsmall, simmedium, simlarge, native) and command.
+- [x] Add other inputs package (simsmall, simmedium, simlarge) and command.
+- [ ] Add native size inputs package.
