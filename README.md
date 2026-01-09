@@ -11,18 +11,30 @@ Usage: ./gen_inputs.sh
 
 **Build Command**
 ```
-Usage: ./build.sh [-p program] [-r] [-h]
-  -p program : specify the program to build, default: barnes
-  -r          : set platform to rv64
-  -h          : display this help message
+Usage: ./build.sh [-p program] [-r] [-h] [-u usage]
+  -p program   : specify the program to build. Default: barnes
+  -r           : set platform to rv64
+  -u           : set usage: normal, profiling, checkpoint. Default: normal
+  -h           : display this help message
 ```
+Example:
+
+```bash
+./build.sh -r -u checkpoint -p all
+```
+Building all workload in RISC-V version for generating checkpoints.
+
 
 **Run Command**
 ```
-Usage: ./run.sh [-p program] [-r] [-v version] [-h]
+Usage: ./run.sh [-p program] [-r] [-v version] [-i input] [-n threads] [-u usage] [-h]
   -p program   : specify the program to run, default: barnes
   -r           : set platform to rv64
   -n threads   : specify the number of threads, default: 1
+  -u usage     : set usage: normal, profiling, checkpoint. default: normal 
+                     normal: normal execution; 
+                     profiling: for profiling; 
+                     checkpoint: for checkpointing.
   -i input     : specify the input size, default: test
   -h           : display this help message
 ```
@@ -31,9 +43,12 @@ Available inputs size: `test`, `simdev`, `simsmall`, `simmedium`, `simlarge`.
 
 **RISC-V Package**
 
-`gen_rv_pack.sh` will pack all the RISC-V bins and datas with running scripts. You can simply copy that package to the target RISC-V machine.
+`gen_rv_pack.sh` will pack all the RISC-V bins and datas with running scripts into `splash2x_rv_pack`. You can simply copy that package to the target RISC-V machine.
 ```
-Usage: ./gen_rv_pack.sh
+Usage: ./gen_rv_pack.sh [-i inputs] [-u usage] [-h]
+  -i inputs    : specify the inputs to package. Default: test
+  -u usage     : set usage: normal, profiling, checkpoint. Default: normal
+  -h           : display this help message
 ```
 
 ## Tests Summay

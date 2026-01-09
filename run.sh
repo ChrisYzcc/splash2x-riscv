@@ -12,7 +12,7 @@ while getopts "p:rhn:u:i:" opt; do
         n) NTHREADS=$OPTARG ;;
         u) USAGE=$OPTARG ;;
         i) INPUT_SIZE=$OPTARG ;;
-        h) echo "Usage: $0 [-p program] [-r] [-v version] [-h]"
+        h) echo "Usage: $0 [-p program] [-r] [-v version] [-i input] [-n threads] [-u usage] [-h]"
            echo "  -p program   : specify the program to run, default: barnes"
            echo "  -r           : set platform to rv64"
            echo "  -n threads   : specify the number of threads, default: 1"
