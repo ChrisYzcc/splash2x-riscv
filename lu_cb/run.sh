@@ -27,5 +27,5 @@ esac
 
 echo "Running lu_cb..."
 cd ${RUN_DIR}
-${BENCH_DIR}/build/${PLATFORM}/bin/lu_cb ${PROGARGS}
+${BENCH_DIR}/build/${PLATFORM}/${USAGE}/bin/lu_cb ${PROGARGS}
 cd ${BENCH_DIR}

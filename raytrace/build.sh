@@ -1,7 +1,7 @@
 BENCH_DIR="$(pwd)"
 
-mkdir -p ${BENCH_DIR}/build/${PLATFORM}/obj
-cp -r ${BENCH_DIR}/src/* ${BENCH_DIR}/build/${PLATFORM}/obj/
+mkdir -p ${BENCH_DIR}/build/${PLATFORM}/${USAGE}/obj
+cp -r ${BENCH_DIR}/src/* ${BENCH_DIR}/build/${PLATFORM}/${USAGE}/obj/
 
-make -C ${BENCH_DIR}/build/${PLATFORM}/obj
-make -C ${BENCH_DIR}/build/${PLATFORM}/obj install
+make -C ${BENCH_DIR}/build/${PLATFORM}/${USAGE}/obj
+make -C ${BENCH_DIR}/build/${PLATFORM}/${USAGE}/obj install

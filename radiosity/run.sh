@@ -27,5 +27,5 @@ esac
 
 echo "Running radiosity..."
 cd ${RUN_DIR}
-${BENCH_DIR}/build/${PLATFORM}/bin/radiosity ${PROGARGS}
+${BENCH_DIR}/build/${PLATFORM}/${USAGE}/bin/radiosity ${PROGARGS}
 cd ${BENCH_DIR}

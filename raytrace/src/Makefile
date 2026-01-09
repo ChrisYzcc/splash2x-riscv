@@ -5,7 +5,7 @@ CFLAGS := $(CFLAGS) -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredun
 CFLAGS := $(CFLAGS) -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels
 LDFLAGS := $(LDFLAGS) -lm 
 
-PREFIX = ${SPLASH2XDIR}/raytrace/build/${PLATFORM}
+PREFIX = ${SPLASH2XDIR}/raytrace/build/${PLATFORM}/${USAGE}
 MACROS := ${SPLASH2XDIR}/m4/parmacs.pthreads.c.m4
 
 ifdef version

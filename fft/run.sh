@@ -27,5 +27,5 @@ esac
 
 echo "Running fft..."
 cd ${RUN_DIR}
-${BENCH_DIR}/build/${PLATFORM}/bin/fft ${PROGARGS}
+${BENCH_DIR}/build/${PLATFORM}/${USAGE}/bin/fft ${PROGARGS}
 cd ${BENCH_DIR}

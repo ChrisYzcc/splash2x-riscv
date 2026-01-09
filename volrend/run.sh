@@ -33,5 +33,5 @@ esac
 
 echo "Running Volrend..."
 cd ${RUN_DIR}
-${BENCH_DIR}/build/${PLATFORM}/bin/volrend ${PROGARGS}
+${BENCH_DIR}/build/${PLATFORM}/${USAGE}/bin/volrend ${PROGARGS}
 cd ${BENCH_DIR}

@@ -35,5 +35,5 @@ esac
 
 echo "Running Raytrace..."
 cd ${RUN_DIR}
-${BENCH_DIR}/build/${PLATFORM}/bin/raytrace ${PROGARGS}
+${BENCH_DIR}/build/${PLATFORM}/${USAGE}/bin/raytrace ${PROGARGS}
 cd ${BENCH_DIR}

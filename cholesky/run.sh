@@ -33,5 +33,5 @@ esac
 
 echo "Running Cholesky..."
 cd ${RUN_DIR}
-${BENCH_DIR}/build/${PLATFORM}/bin/cholesky -p${NTHREADS} < ${INPUTFILE}
+${BENCH_DIR}/build/${PLATFORM}/${USAGE}/bin/cholesky -p${NTHREADS} < ${INPUTFILE}
 cd ${BENCH_DIR}

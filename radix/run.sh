@@ -27,5 +27,5 @@ esac
 
 echo "Running radix..."
 cd ${RUN_DIR}
-${BENCH_DIR}/build/${PLATFORM}/bin/radix ${PROGARGS}
+${BENCH_DIR}/build/${PLATFORM}/${USAGE}/bin/radix ${PROGARGS}
 cd ${BENCH_DIR}

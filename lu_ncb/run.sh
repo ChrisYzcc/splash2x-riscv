@@ -27,5 +27,5 @@ esac
 
 echo "Running lu_ncb..."
 cd ${RUN_DIR}
-${BENCH_DIR}/build/${PLATFORM}/bin/lu_ncb ${PROGARGS}
+${BENCH_DIR}/build/${PLATFORM}/${USAGE}/bin/lu_ncb ${PROGARGS}
 cd ${BENCH_DIR}

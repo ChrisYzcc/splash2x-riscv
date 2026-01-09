@@ -27,5 +27,5 @@ esac
 
 echo "Running ocean_ncp..."
 cd ${RUN_DIR}
-${BENCH_DIR}/build/${PLATFORM}/bin/ocean_ncp ${PROGARGS}
+${BENCH_DIR}/build/${PLATFORM}/${USAGE}/bin/ocean_ncp ${PROGARGS}
 cd ${BENCH_DIR}

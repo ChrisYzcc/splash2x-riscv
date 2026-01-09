@@ -22,5 +22,5 @@ echo
 
 echo "Running water_nsquared..."
 cd ${RUN_DIR}
-${BENCH_DIR}/build/${PLATFORM}/bin/water_nsquared ${NTHREADS} < ${INPUT_FILE}
+${BENCH_DIR}/build/${PLATFORM}/${USAGE}/bin/water_nsquared ${NTHREADS} < ${INPUT_FILE}
 cd ${BENCH_DIR}

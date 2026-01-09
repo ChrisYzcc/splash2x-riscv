@@ -22,5 +22,5 @@ echo
 
 echo "Running fmm..."
 cd ${RUN_DIR}
-${BENCH_DIR}/build/${PLATFORM}/bin/fmm ${NTHREADS} < ${INPUT_FILE}
+${BENCH_DIR}/build/${PLATFORM}/${USAGE}/bin/fmm ${NTHREADS} < ${INPUT_FILE}
 cd ${BENCH_DIR}
