@@ -28,13 +28,22 @@ if [ "$USAGE" != "normal" ] && [ "$USAGE" != "profiling" ] && [ "$USAGE" != "che
     exit 1
 fi
 
+# Support INPUTS: test, simdev, simsmall, simmedium, simlarge
 INPUT_LIST=""
-if [ "$INPUTS" = "test" ]; then
-    INPUT_LIST="test"
-else
-    echo "\033[31m[ERROR] Unknown inputs: $INPUTS\033[0m"
-    exit 1
-fi
+for INPUT in $(echo $INPUTS | tr ',' ' '); do
+    case "$INPUT" in
+        test) INPUT_LIST="${INPUT_LIST} test" ;;
+        simdev) INPUT_LIST="${INPUT_LIST} simdev" ;;
+        simsmall) INPUT_LIST="${INPUT_LIST} simsmall" ;;
+        simmedium) INPUT_LIST="${INPUT_LIST} simmedium" ;;
+        simlarge) INPUT_LIST="${INPUT_LIST} simlarge" ;;
+        *)
+            echo "\033[31m[ERROR] Unknown input set: $INPUT\033[0m"
+            exit 1
+            ;;
+    esac
+done
+
 
 echo "==========================================================="
 echo "  Input sets to package   : $INPUT_LIST"
